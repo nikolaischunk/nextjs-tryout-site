@@ -1,0 +1,9 @@
+// theme/_theme.scss
+
+@import "./fonts";
+@import "./colors";
+
+.is-secondary {
+    color: $secondary;
+    background-color: $secondary;
+}

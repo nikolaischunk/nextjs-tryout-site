@@ -1,0 +1,46 @@
+// theme/_colors.scss
+
+// initial-variables
+$turquoise: #78c2ad;
+$purple: #bcacdf;
+$orange: #e9495c;
+$cyan: #046589;
+$blue: #7892c2;
+
+//derived variables
+$light: #fefefe;
+$dark: #262828;
+
+$primary: $turquoise;
+// $primary-light: lighten($primary, 30%);
+// $primary-dark: darken($primary, 30%);
+
+$secondary: #f3969a;
+// $primary-light: lighten($secondary, 30%);
+// $primary-dark: darken($secondary, 30%);
+
+$highlight: #e9495c;
+
+/*
+
+PRIMARY / LIGHT BLUE
+#78C2AD
+
+PINK
+#F3969A
+
+PURPLE
+#bcacdf
+
+DARK
+#262828
+
+LIGHT
+#FEFEFE
+
+HIGHLIGHT?
+#12ab93
+#e9495c
+
+https://poolors.com/fefefe-ec237a
+*/

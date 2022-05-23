@@ -6,24 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "css-build": "sass styles/scss/globals.scss styles/globals.css --no-source-map",
+    "css-watch": "yarn run css-build --watch",
+    "start-css": "yarn run css-watch"
   },
   "dependencies": {
-    "@mantine/core": "^4.2.5",
-    "@mantine/dates": "^4.2.5",
-    "@mantine/form": "^4.2.5",
-    "@mantine/hooks": "^4.2.5",
-    "@mantine/modals": "^4.2.5",
-    "@mantine/next": "^4.2.5",
-    "@mantine/notifications": "^4.2.5",
-    "@mantine/prism": "^4.2.5",
-    "dayjs": "^1.11.2",
+    "bulma": "^0.9.2",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "sass": "^1.52.1",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
-    "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6"
+    "eslint": "^8.16.0"
   }
 }
