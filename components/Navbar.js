@@ -13,17 +13,18 @@ function Navbar() {
   return (
     <div>
       <nav
-        className="navbar has-shadow is-primary"
+        className="navbar has-shadow is-primary mb-2"
         role="navigation"
         aria-label="main navigation"
       >
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
-            <img
+            {/* <img
               src="https://bulma.io/images/bulma-logo.png"
               width="112"
               height="28"
-            />
+            /> */}
+            <h1 className="navbar-logo is-size-3 is-logo">Nikolai</h1>
           </a>
 
           <a
@@ -48,18 +49,18 @@ function Navbar() {
             <Link href="/">
               <a className="navbar-item">Home</a>
             </Link>
-            <Link href="/site/fullhero">
-              <a className="navbar-item">Full Hero</a>
+            <Link href="/styleguide">
+              <a className="navbar-item">Style Guide</a>
             </Link>
 
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">Tryout</a>
 
               <div className="navbar-dropdown">
-              <Link href="/tryouts">
-                <a className="navbar-item">
-                  Tryouts
-                </a>
+                <Link href="/tryouts">
+                  <a className="navbar-item">
+                    Tryouts
+                  </a>
                 </Link>
                 <a className="navbar-item">Lorem Ipsum</a>
                 <a className="navbar-item">Lorem Ipsum</a>
