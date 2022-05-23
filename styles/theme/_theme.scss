@@ -2,3 +2,8 @@
 
 @import "./fonts";
 @import "./colors";
+
+.is-secondary {
+    color: $secondary;
+    background-color: $secondary;
+}

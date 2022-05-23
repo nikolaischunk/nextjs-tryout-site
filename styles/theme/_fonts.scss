@@ -1,5 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:800|Merriweather+Sans|Share+Tech+Mono');
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara&family=Raleway:wght@400;800&family=Rubik:wght@500;800&display=swap");
 
-$logo-font: 'Share Tech Mono', monospace;
-$header-font: 'Raleway', sans-serif;
-$core-font: 'Merriweather Sans', sans-serif;
+$header-font: "Rubik", sans-serif;
+$sub-header-font: "Raleway", sans-serif;
+$core-font: "Hind Vadodara", sans-serif;
+
+$family-primary: $core-font;
+$family-secondary: $header-font;
+$logo-font: $header-font;
+
+/*
+HEADING
+- Rubik
+HEADING 2 (800)
+- Raleway
+CONTENT (normal)
+- Hind Vadora
+
+font-family: 'Rubik', sans-serif;
+
+font-family: 'Raleway', sans-serif;
+
+font-family: 'Hind Vadodara', sans-serif;
+
+*/
