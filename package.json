@@ -17,5 +17,8 @@
     "react-dom": "18.1.0",
     "sass": "^1.52.1",
     "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0"
   }
 }
