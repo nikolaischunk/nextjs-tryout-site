@@ -1,5 +1,6 @@
-import "../styles/Home.module.scss";
+import "../styles/components/Navbar.module.scss";
 import { useState } from "react";
+import Link from "next/link";
 
 function Navbar() {
   const [isActive, setisActive] = useState(false);
@@ -11,7 +12,11 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <nav
+        className="navbar has-shadow is-primary"
+        role="navigation"
+        aria-label="main navigation"
+      >
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
             <img
@@ -40,28 +45,31 @@ function Navbar() {
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
           <div className="navbar-start">
-            <a className="navbar-item" href="#">
-              Home
-            </a>
-
-            <a className="navbar-item" href="./site/fullhero">
-              Full Hero
-            </a>
+            <Link href="/">
+              <a className="navbar-item">Home</a>
+            </Link>
+            <Link href="/site/fullhero">
+              <a className="navbar-item">Full Hero</a>
+            </Link>
 
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">More</a>
+              <a className="navbar-link">Tryout</a>
 
               <div className="navbar-dropdown">
-                <a className="navbar-item">About</a>
-                <a className="navbar-item">Jobs</a>
-                <a className="navbar-item">Contact</a>
+              <Link href="/tryouts">
+                <a className="navbar-item">
+                  Tryouts
+                </a>
+                </Link>
+                <a className="navbar-item">Lorem Ipsum</a>
+                <a className="navbar-item">Lorem Ipsum</a>
                 <hr className="navbar-divider" />
-                <a className="navbar-item">Report an issue</a>
+                <a className="navbar-item">Lorem Ipsum</a>
               </div>
             </div>
           </div>
 
-          <div className="navbar-end">
+          {/* <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
                 <a className="button is-primary">
@@ -70,7 +78,7 @@ function Navbar() {
                 <a className="button is-light">Log in</a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </nav>
     </div>
