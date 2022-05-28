@@ -1,46 +1,50 @@
 const Main = () => {
   return (
-    <div className="buttons-tryout">
-      <div className="box buttons">
-        <button class="button">Normal</button>
-        <button class="button is-primary">Primary</button>
-        <button class="button is-secondary">Secondary</button>
-        <button class="button is-link">Link</button>
-        <button class="button is-info">Info</button>
-        <button class="button is-success">Success</button>
-        <button class="button is-warning">Warning</button>
-        <button class="button is-danger">Danger</button>
+    <div className="buttons-tryout box">
+      <h1 className="has-text-weight-semibold is-size-1 is-family-primary">Buttons</h1>
+      <p className="is-family-secondary has-text-weight-light">An overview over the Button Combinations used in this Project</p>
+      <br />
+      <div className="block buttons">
+        <button className="button">Normal</button>
+        <button className="button is-primary">Primary</button>
+        <button className="button is-secondary">Secondary</button>
+        <button className="button is-link">Link</button>
+        <button className="button is-info">Info</button>
+        <button className="button is-success">Success</button>
+        <button className="button is-warning">Warning</button>
+        <button className="button is-danger">Danger</button>
       </div>
 
-      <div className="box buttons">
-        <button class="button is-light">Normal</button>
-        <button class="button is-primary is-light">Primary</button>
-        <button class="button is-link is-light">Link</button>
-        <button class="button is-info is-light">Info</button>
-        <button class="button is-success is-light">Success</button>
-        <button class="button is-warning is-light">Warning</button>
-        <button class="button is-danger is-light">Danger</button>
+      <div className="block buttons">
+        <button className="button is-light">Normal</button>
+        <button className="button is-primary is-light">Primary</button>
+        <button className="button is-link is-light">Link</button>
+        <button className="button is-info is-light">Info</button>
+        <button className="button is-success is-light">Success</button>
+        <button className="button is-warning is-light">Warning</button>
+        <button className="button is-danger is-light">Danger</button>
       </div>
 
-      <div className="box buttons">
-        <button class="button is-rounded">Normal</button>
-        <button class="button is-primary is-rounded">Primary</button>
-        <button class="button is-link is-rounded">Link</button>
-        <button class="button is-info is-rounded">Info</button>
-        <button class="button is-success is-rounded">Success</button>
-        <button class="button is-warning is-rounded">Warning</button>
-        <button class="button is-danger is-rounded">Danger</button>
+      <div className="block buttons">
+        <button className="button is-rounded">Normal</button>
+        <button className="button is-primary is-rounded">Primary</button>
+        <button className="button is-link is-rounded">Link</button>
+        <button className="button is-info is-rounded">Info</button>
+        <button className="button is-success is-rounded">Success</button>
+        <button className="button is-warning is-rounded">Warning</button>
+        <button className="button is-danger is-rounded">Danger</button>
       </div>
 
-      <div className="box buttons">
-        <button class="button is-outlined">Normal</button>
-        <button class="button is-primary is-outlined">Primary</button>
-        <button class="button is-link is-outlined">Link</button>
-        <button class="button is-info is-outlined">Info</button>
-        <button class="button is-success is-outlined">Success</button>
-        <button class="button is-warning is-outlined">Warning</button>
-        <button class="button is-danger is-outlined">Danger</button>
+      <div className="block buttons">
+        <button className="button is-outlined">Normal</button>
+        <button className="button is-primary is-outlined">Primary</button>
+        <button className="button is-link is-outlined">Link</button>
+        <button className="button is-info is-outlined">Info</button>
+        <button className="button is-success is-outlined">Success</button>
+        <button className="button is-warning is-outlined">Warning</button>
+        <button className="button is-danger is-outlined">Danger</button>
       </div>
+      <br />
     </div >
   );
 }
