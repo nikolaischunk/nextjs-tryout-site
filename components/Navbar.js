@@ -33,8 +33,7 @@ function Navbar() {
             aria-label="menu"
             aria-expanded="false"
             data-target="navbar-rollout"
-            data-action="collapse"
-          // onClick={handleBurgerToggle}
+            onClick={handleBurgerToggle}
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -43,7 +42,7 @@ function Navbar() {
         </div>
 
         <div
-          id="navbar-rollout is-collapsible"
+          id="navbar-rollout"
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
           <div className="navbar-start">
