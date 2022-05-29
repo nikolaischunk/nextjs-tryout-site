@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }) {
     <div className="app">
       <Navbar />
       <Component {...pageProps} />
-      {/* here maybe a footer? */}
       <Footer />
     </div>
   );

@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-import Tryout from "../components/Tryout";
+import Header from "../components/styleguide/Header";
+import Navbar from "../components/styleguide/Navbar";
+import Tryout from "../components/styleguide/Tryout";
 
 const tryout = () => {
   return (
     <div className="main-content">
-      <Navbar />
       <div className="container">
         <Header />
         <Tryout />
