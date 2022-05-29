@@ -1,5 +1,5 @@
 import Main from "../components/Main";
-import Buttons from "../components/Buttons";
+import Buttons from "../components/styleguide/Buttons";
 
 export default function Home() {
   return (
