@@ -5,6 +5,16 @@ export const faq = [
     "answer": "Copyright is a form of protection, authorized by the United States Constitution, that gives photographers, artists, authors, musicians, choreographers and architects the exclusive right to use and reproduce their works. Essentially, all original works can be copyrighted. This includes photographs, art works, sculpture, writings, music and computer software. Virtually all works created or first published after January 1, 1978 are protected by copyright."
   },
   {
+    "url": "what-is-the-data-protection-act",
+    "question": "What is the Data Protection Act?",
+    "answer": "The Data Protection Act (DSG) aims in particular to protect personal data from misuse. One speaks of personal data when these can be assigned to a concrete natural or legal person. For the collection, storage and processing of personal data, either the consent of the persons concerned is usually required or there must be a legal basis. Data processing must be carried out in good faith and must be proportionate. Furthermore, personal data may only be processed for the purpose that was stated when it was collected, is evident from the circumstances or is provided for by law. In the context of websites, data protection law is relevant if personal data is collected, stored and processed when using the websites.In this context, it is particularly important that the data subjects have some form of explicit or at least implicit opportunity to give their consent to data collection, storage and processing, or to refuse such consent.Website operators are recommended to inform their users about what happens to their data.This information usually takes the form of a privacy statement."
+  },
+  {
+    "url": "what-is-the-right-at-the-own-picture",
+    "question": "What is the right at the own picture?",
+    "answer": "If natural persons appear in a picture, they must have given their prior consent to the publication of the picture. This also applies in particular to the use of images found on Facebook, Instagram or other social media networks. The consent should always be recorded in writing."
+  },
+  {
     "url": "who-owns-the-copyright",
     "question": "Who owns the copyright?",
     "answer": "Generally, the person who creates a work is the owner of the copyright. Thus, independent artists, photographers and writers own the copyrights to their works. The only exceptions to this rule occur when a work is created by an employee as part of his or her job duties or when a work is created under a written work-for-hire agreement."
@@ -40,10 +50,9 @@ export const faq = [
     "answer": "Yes. The right to make derivative copies is reserved exclusively to the copyright owner. While the idea for a work of art can be copied, the expression of the idea is fully protected. Sometimes, it is difficult to differentiate between an idea and an expression because the idea can sometimes get lost in the expression."
   },
   {
-    "url": "try",
-    "question": "try",
-    "answer": "aaa"
+    "url": "are-there-any-times-that-i-can-use-a-copyrighted-work-without-risking-infringement ",
+    "question": "Are there any times that I can use a copyrighted work without risking infringement?",
+    "answer": "Yes. The concept of fair use permits the utilization of copyrighted materials for certain purposes. For example, a newspaper can publish copyrighted works for purposes of reporting news and a teacher can make multiple copies of certain works for classroom use without risking infringement. In order to determine if a use is fair or is an infringement, one must determine how much of the copyrighted work is used and the impact this use will have on the potential market for the copyrighted work. If large portions of a copyrighted work are used or if the use lessons the potential market for the work, there will be infringement."
   },
-
 ]
 
