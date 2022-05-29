@@ -18,7 +18,7 @@ function Navbar() {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
+          <a className="navbar-item" href="#">
             {/* <img
               src="https://bulma.io/images/bulma-logo.png"
               width="112"
@@ -32,8 +32,9 @@ function Navbar() {
             className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
             aria-label="menu"
             aria-expanded="false"
-            data-target="navbarBasicExample"
-            onClick={handleBurgerToggle}
+            data-target="navbar-rollout"
+            data-action="collapse"
+          // onClick={handleBurgerToggle}
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -42,7 +43,7 @@ function Navbar() {
         </div>
 
         <div
-          id="navbarBasicExample"
+          id="navbar-rollout is-collapsible"
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
           <div className="navbar-start">
@@ -51,6 +52,9 @@ function Navbar() {
             </Link>
             <Link href="/styleguide">
               <a className="navbar-item">Style Guide</a>
+            </Link>
+            <Link href="/copyright">
+              <a className="navbar-item">Copyright</a>
             </Link>
 
             <div className="navbar-item has-dropdown is-hoverable">
