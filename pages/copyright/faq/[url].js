@@ -1,5 +1,5 @@
 let { faq } = require('../../../db/copyright_faq');
-import Main from "../../../components/copyright/cpr_main";
+import Main from "../../../components/copyright/faq/faq_main";
 
 export const getStaticProps = async ({ params }) => {
     //https://medium.com/swlh/next-js-usestaticprops-usestaticpaths-static-json-data-9f7903b8a5aa

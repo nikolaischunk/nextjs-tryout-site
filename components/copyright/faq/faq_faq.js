@@ -1,5 +1,5 @@
-import Content from "./cpr_content";
-import Navigate from "./cpr_navigate";
+import Content from "./faq_content";
+import Navigate from "./faq_navigate";
 
 const FAQ = ({ title, subtitle, content }) => {
 

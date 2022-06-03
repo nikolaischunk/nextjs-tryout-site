@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from 'next/router';
 
-let { faq } = require('../../db/copyright_faq');
+let { faq } = require('../../../db/copyright_faq');
 
 const Navigate = () => {
     const { asPath } = useRouter();
@@ -11,8 +11,8 @@ const Navigate = () => {
             <aside className="menu">
                 <ul className="menu-list">
                     <li>
-                        <Link href="/copyright">
-                            <a className={`${currentLocation === "copyright" ? "is-active " : " "}is-family-title`}>Start</a>
+                        <Link href="/copyright/faq">
+                            <a className={`${currentLocation === "faq" ? "is-active " : " "}is-family-title`}>Start</a>
                         </Link>
                     </li>
                     <p className="menu-label is-family-title">

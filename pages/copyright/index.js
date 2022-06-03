@@ -1,10 +1,11 @@
-import Main from "../../components/copyright/cpr_main";
+import Heading from "../../components/items/heading";
 
 const copyright = () => {
-    let content = "Here is a list of all available Questions and Answers regarding the topic Copyright."
-    return (<div className="copyright">
-        <Main title="Start" content={content} />
-    </div >);
+    return (
+        <div className="copyright">
+            <Heading title="Copyright" />
+        </div>
+    );
 }
 
 export default copyright;
