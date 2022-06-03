@@ -9,24 +9,24 @@
 }
 
 .is-logo {
-    font-family: $logo-font;
+    font-family: $header-font;
 }
 
 // classname with number as props (e.g. .is-heading-1)
 .is-heading-1 {
-    font-family: $family-primary;
+    font-family: $header-font;
     font-size: 4rem;
     line-height: 4rem;
 }
 
 .is-heading-2 {
-    font-family: $family-primary;
+    font-family: $header-font;
     font-size: 3.5rem;
     line-height: 3.5rem;
 }
 
 .is-heading-3 {
-    font-family: $family-primary;
+    font-family: $header-font;
     font-size: 3rem;
     line-height: 3rem;
 }
