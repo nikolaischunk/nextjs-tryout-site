@@ -24,7 +24,7 @@ function Navbar() {
               width="112"
               height="28"
             /> */}
-            <h1 className="navbar-logo is-size-3 is-logo">Nikolai</h1>
+            <h1 className="navbar-logo is-size-4 is-logo">Nikolai</h1>
           </a>
 
           <a
