@@ -21,6 +21,12 @@ $secondary: #f3969a;
 
 $highlight: #e9495c;
 
+.is-color-secondary {
+    color: $secondary;
+}
+.has-text-secondary {
+    color: $secondary;
+}
 /*
 
 PRIMARY / LIGHT BLUE
