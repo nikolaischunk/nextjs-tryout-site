@@ -1,9 +1,11 @@
+import Divider from "../items/divider";
+import Heading from "../items/heading";
+
 const Main = () => {
   return (
-    <div className="buttons-tryout box">
-      <h1 className="has-text-weight-semibold is-size-1 is-family-primary">Buttons</h1>
-      <p className="is-family-secondary has-text-weight-light">An overview over the Button Combinations used in this Project</p>
-      <br />
+    <div className="buttons-tryout">
+      <Heading heading="Buttons" subheading="An overview over the Button Combinations used in this Project" />
+
       <div className="block buttons">
         <button className="button">Normal</button>
         <button className="button is-primary">Primary</button>
@@ -44,7 +46,7 @@ const Main = () => {
         <button className="button is-warning is-outlined">Warning</button>
         <button className="button is-danger is-outlined">Danger</button>
       </div>
-      <br />
+      <Divider />
     </div >
   );
 }

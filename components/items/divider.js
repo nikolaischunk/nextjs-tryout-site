@@ -4,7 +4,7 @@ const Divider = ({ text, isVertical, left, right }) => {
     classname = left ? classname.concat(" is-left") : classname;
     classname = right ? classname.concat(" is-right") : classname;
     return (
-        <div className={classname}> {text}</div >
+        <div className={"is-family-title " + classname} >{text}</div >
     );
 }
 

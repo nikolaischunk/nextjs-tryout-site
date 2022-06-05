@@ -1,0 +1,58 @@
+export const licenses = [
+    {
+        name: 'Public Domain Mark (PD)',
+        short: 'Public Domain Mark',
+        slug: 'pd',
+        url: 'http://creativecommons.org/publicdomain/mark/1.0/',
+        content: 'The work identified as being free of known restrictions under copyright law, including all related and neighboring rights.',
+    },
+    {
+        name: 'Creative Commons Attribution (CC)',
+        short: 'Creative Commons',
+        slug: 'cca',
+        url: 'http://creativecommons.org/licenses/by/4.0/',
+        content: 'This is the standard creative commons license that gives others maximum freedom to do what they want with your work.',
+    },
+    {
+        name: 'Public Domain Dedication (CC Zero)',
+        short: 'Public Domain Dedication',
+        slug: 'pdd',
+        url: 'http://creativecommons.org/publicdomain/zero/1.0/',
+        content: 'CC Zero enables scientists, educators, artists and other creators and owners of copyright- or database-protected content to waive those interests in their works and thereby place them as completely as possible in the public domain, so that others may freely build upon, enhance and reuse the works for any purposes without restriction under copyright or database law.',
+    },
+    {
+        name: 'Creative Commons Attribution-NonCommercial (CC-BY-NC)',
+        short: 'CC Non Commercial',
+        slug: 'ccanc',
+        url: 'http://creativecommons.org/licenses/by-nc/4.0/',
+        content: 'A creative commons license that bans commercial use.',
+    },
+    {
+        name: 'GNU General Public License 3 (GPL-3.0)',
+        short: 'GNU General Public License',
+        slug: 'gnu-3',
+        url: 'http://opensource.org/licenses/GPL-3.0',
+        content: 'You may copy, distribute and modify the software as long as you track changes/dates of in source files and keep modifications under GPL. You can distribute your application using a GPL library commercially, but you must also provide the source code. GPL 3 tries to close some loopholes in GPL 2.',
+    },
+    {
+        name: 'Mozilla Public License 2.0',
+        short: 'Mozilla Public License',
+        slug: 'mpl-2',
+        url: 'http://opensource.org/licenses/MPL-2.0',
+        content: 'This is a lenient license used by the Mozilla Corporation that allows you a variety of explicit freedoms with the software so long as you keep modifications under this license and distribute the original source code alongside executables. It is a good midway license it isn\'t very strict and has only straightforward requirements.',
+    },
+    {
+        name: 'The MIT License (MIT)',
+        short: 'MIT License',
+        slug: 'mit',
+        url: 'http://opensource.org/licenses/mit-license.php',
+        content: 'A short, permissive software license. Basically, you can do whatever you want as long as you include the original copyright and license.',
+    },
+    {
+        name: 'Apache License 2',
+        short: 'Apache 2',
+        slug: 'apache-2',
+        url: 'http://www.apache.org/licenses/LICENSE-2.0',
+        content: 'A license that allows you much freedom with the software, including an explicit right to a patent. \'State changes\' means that you have to include a notice in each file you modified.',
+    },
+];
