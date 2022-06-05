@@ -12,6 +12,11 @@
     font-family: $header-font;
 }
 
+.container {
+        padding-left: 2%;
+        padding-right: 2%;  
+}
+
 // classname with number as props (e.g. .is-heading-1)
 .is-heading-1 {
     font-family: $header-font;
