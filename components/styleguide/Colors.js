@@ -1,9 +1,10 @@
+import Divider from "../items/divider";
 import Heading from "../items/heading";
 
 const Colors = () => {
     return (
         <div className="colors" id="colors">
-            <div className="box">
+            <div className="">
                 <Heading heading="Colors" subheading="An overview over the Colors used in this Project" />
                 <button className="button is-fullwidth is-primary block">Normal</button>
                 <button className="button is-fullwidth is-link block">Link</button>
@@ -45,7 +46,7 @@ const Colors = () => {
                     </article>
                 </div> */}
             </div>
-            <br />
+            <Divider />
         </div>
     );
 }

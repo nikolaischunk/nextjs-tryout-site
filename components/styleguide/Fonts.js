@@ -1,9 +1,10 @@
+import Divider from "../items/divider";
 import Heading from "../items/heading";
 
 const Fonts = () => {
     return (
         <div className="fonts" id="fonts">
-            <div className="box">
+            <div className="">
                 <Heading heading="Fonts" subheading="An overview over the Fonts used in this Project" />
 
                 <h3 className="has-text-weight-semibold is-size-3 is-family-title">Rubik</h3>
@@ -15,7 +16,7 @@ const Fonts = () => {
                 <h3 className="has-text-weight-semibold is-size-3 is-family-text">Hind Vadodara</h3>
                 <h4 className="=is-size-4 is-family-sub-title">Body Font</h4>
             </div>
-            <br />
+            <Divider />
         </div>
     );
 }

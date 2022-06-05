@@ -1,8 +1,9 @@
+import Divider from "../items/divider";
 import Heading from "../items/heading";
 
 const Main = () => {
   return (
-    <div className="buttons-tryout box">
+    <div className="buttons-tryout">
       <Heading heading="Buttons" subheading="An overview over the Button Combinations used in this Project" />
 
       <div className="block buttons">
@@ -45,7 +46,7 @@ const Main = () => {
         <button className="button is-warning is-outlined">Warning</button>
         <button className="button is-danger is-outlined">Danger</button>
       </div>
-      <br />
+      <Divider />
     </div >
   );
 }
