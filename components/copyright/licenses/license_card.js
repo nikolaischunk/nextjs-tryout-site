@@ -4,14 +4,14 @@ import Navigate from "./license_navigate";
 const Card = ({ title, subtitle, content, url }) => {
 
     return (
-        <div className="license_card container">
+        <div className="license_card">
             <div className="columns">
                 {/* <div className="column is-1"></div> */}
                 <div className="column is-3">
                     <Navigate />
                 </div >
                 <div className="column">
-                    <Content title={title} subtitle={subtitle} content={content} />
+                    <Content title={title} subtitle={subtitle} url={url} content={content} />
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ export const getStaticPaths = async () => {
 };
 
 const q = ({ question }) => {
-    return (<div className="question">
+    return (<div className="copyright_faq">
         <Main title={question.question} content={question.answer} />
     </div>);
 }

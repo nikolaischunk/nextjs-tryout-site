@@ -21,7 +21,7 @@ export const getStaticPaths = async () => {
 const license_page = ({ license }) => {
     return (
         <div className="license">
-            <Main title={license.name} content={license.content} />
+            <Main title={license.name} url={license.url} content={license.content} />
         </div>);
 }
 
