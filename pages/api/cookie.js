@@ -1,16 +1,35 @@
-// import cookieCutter from 'cookie-cutter'
-// // want some?
+// import { setCookies, getCookies, removeCookies } from 'cookies-next';
 
-// export default ({ get: getCookie, post: setCookie }) => {
-    
+// setCookies('key', 'value', options);
+// getCookies(options); // => { 'name1': 'value1', name2: 'value2' }
+// removeCookies(name, options);
+
+// const Cookie_banner = () => {
+//     return (
+//         <div class="cookie_banner">
+//             {/* Check if there is a cookie existent with the name "cookie_accepted"
+//         If it does not exist show a banner with a cookie message and a accept and deny button and a link to your privacy policy.
+//         If you click on accept set a cookie with the name "cookie_accepted" */}
+//             {
+//                 !getCookies('cookie_accepted') &&
+//                 <div>
+//                     <p>
+//                         This website uses cookies.
+//                     </p>
+//                     <button onClick={() => {
+//                         setCookies('cookie_accepted', true);
+//                     }}>
+//                         Accept
+//                     </button>
+//                     <button onClick={() => {
+//                         removeCookies('cookie_accepted');
+//                     }}>
+//                         Deny
+//                     </button>
+//                 </div>
+//             }
+//         </div>
+//     )
 // }
 
-// function getCookie(cookieName, req, res) {
-//     let cookie = cookieCutter.get(cookieName)
-//     return cookie;
-// }
-
-// function getByQuestion(question) {
-//     return faqs.find(qa => qa.question.toString() === question.toString());
-// }
-
+// export default Cookie_banner;
