@@ -7,8 +7,8 @@ const Layout = ({ children }) => {
         <div className="layout">
             <Navbar />
             <main>{children}</main>
-            <Cookie_banner />
             <Footer />
+            <Cookie_banner />   
         </div>
     );
 }

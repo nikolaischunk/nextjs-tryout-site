@@ -1,50 +1,71 @@
-import { setCookies, getCookie, getCookies, removeCookies } from 'cookies-next';
+import { setCookies, getCookie, getCookies, removeCookies } from "cookies-next";
+import React, { useState, useEffect } from "react";
 
 // setCookies('key', 'value', options);
 // getCookies(options); // => { 'name1': 'value1', name2: 'value2' }
 // removeCookies(name, options);
 
 const Cookie_banner = () => {
-    let isCookieAccepted = getCookie('cookie_accepted');
-    console.log("isCookieAccepted", isCookieAccepted);
+  const [areCookiesAccepted, setAreCookiesAccepted] = useState(false);
 
-    return (
-        <div className="cookie_banner">
-            {/* Check if there is a cookie existent with the name "cookie_accepted"
-        If it does not exist show a banner with a cookie message and a accept and deny button and a link to your privacy policy.
-        If you click on accept set a cookie with the name "cookie_accepted" */}
+  // useEffect(() => {
+  //     setAreCookiesAccepted(getCookie('cookies_accepted'));
+  // }, []);
 
+  function setAcceptedCookies() {
+    setCookies("cookies_accepted", true, { expires: 1 });
+    setAreCookiesAccepted(true);
+  }
 
-            {!isCookieAccepted &&
-                <div>
-                    <p>
-                        This website uses cookies. No cookie set.
-                    </p>
-                    <button onClick={() => {
-                        setCookies('cookie_accepted', true);
-                    }}>
-                        Accept
-                    </button>
-                </div>
-            }
-            {isCookieAccepted &&
-                <div>
-                    <p>
-                        This website uses cookies. You have accepted the cookies
-                    </p>
-                    <div class="buttons">
-                        <button class='button is-success' onClick={() => {
-                            removeCookies('cookie_accepted');
-                        }}>
-                            Remove
-                        </button>
-                        <button className="button is-primary is-outlined">Primary</button>
-                    </div>
-                </div>
+  function removeCookiesAcception() {
+    removeCookies("cookies_accepted");
+    setAreCookiesAccepted(false);
+  }
 
-            }
+  function generateBanner() {
+    if (areCookiesAccepted) {
+      return (
+        <div className="cookie-accepted">
+          <p>This website uses cookies. You have accepted the cookies</p>
+          <div class="buttons">
+            <button
+              class="button is-danger"
+              onClick={() => {
+                removeCookiesAcception();
+              }}
+            >
+              Remove
+            </button>
+            <button className="button is-primary is-outlined">Primary</button>
+          </div>
         </div>
-    )
-}
+      );
+    }
+    return (
+      <div className="cookie-not-yet-accepted">
+        <p>This website uses cookies. No cookie set.</p>
+
+        <div class="buttons">
+          <button
+            class="button is-success"
+            onClick={() => {
+              setAcceptedCookies();
+            }}
+          >
+            Accept
+          </button>
+          <button className="button is-primary is-outlined">Primary</button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="cookie_banner_component">
+      <p>cookie banner</p>
+      {generateBanner()}
+    </div>
+  );
+};
 
 export default Cookie_banner;
