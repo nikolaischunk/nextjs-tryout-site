@@ -1,3 +1,5 @@
+import "../styles/components/Footer.module.scss";
+
 const Footer = () => {
   return (
     <footer className="footer mt-3">
