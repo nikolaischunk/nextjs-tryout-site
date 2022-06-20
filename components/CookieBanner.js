@@ -8,12 +8,16 @@ import React, { useState, useEffect } from "react";
 const Cookie_banner = () => {
   const [areCookiesAccepted, setAreCookiesAccepted] = useState(false);
 
-  // useEffect(() => {
-  //     setAreCookiesAccepted(getCookie('cookies_accepted'));
-  // }, []);
+  useEffect(() => {
+    setAreCookiesAccepted(getCookie("cookies_accepted"));
+  }, []);
 
   function setAcceptedCookies() {
-    setCookies("cookies_accepted", true, { expires: 1 });
+    //get today date and add 7 days to the date
+    const date = new Date();
+    date.setDate(date.getDate() + 7);
+
+    setCookies("cookies_accepted", true, { expires: date });
     setAreCookiesAccepted(true);
   }
 
@@ -27,9 +31,9 @@ const Cookie_banner = () => {
       return (
         <div className="cookie-accepted">
           <p>This website uses cookies. You have accepted the cookies</p>
-          <div class="buttons">
+          <div className="buttons">
             <button
-              class="button is-danger"
+              className="button is-danger"
               onClick={() => {
                 removeCookiesAcception();
               }}
@@ -43,18 +47,29 @@ const Cookie_banner = () => {
     }
     return (
       <div className="cookie-not-yet-accepted">
-        <p>This website uses cookies. No cookie set.</p>
+        <div id="modal-js-example" class="modal is-active">
+          <div class="modal-background"></div>
 
-        <div class="buttons">
-          <button
-            class="button is-success"
-            onClick={() => {
-              setAcceptedCookies();
-            }}
-          >
-            Accept
-          </button>
-          <button className="button is-primary is-outlined">Primary</button>
+          <div class="modal-content">
+            <div class="box">
+              <p>Modal JS example</p>
+              <p>This website uses cookies. No cookie set.</p>
+
+              <div className="buttons">
+                <button
+                  className="button is-success"
+                  onClick={() => {
+                    setAcceptedCookies();
+                  }}
+                >
+                  Accept
+                </button>
+                <button className="button is-primary is-outlined">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

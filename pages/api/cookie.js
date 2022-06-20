@@ -6,7 +6,7 @@
 
 // const Cookie_banner = () => {
 //     return (
-//         <div class="cookie_banner">
+//         <div className="cookie_banner">
 //             {/* Check if there is a cookie existent with the name "cookie_accepted"
 //         If it does not exist show a banner with a cookie message and a accept and deny button and a link to your privacy policy.
 //         If you click on accept set a cookie with the name "cookie_accepted" */}
