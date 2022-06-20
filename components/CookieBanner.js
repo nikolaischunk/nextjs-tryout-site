@@ -1,5 +1,6 @@
 import { setCookies, getCookie, getCookies, removeCookies } from "cookies-next";
 import React, { useState, useEffect } from "react";
+import "../styles/components/CookieBanner.module.scss";
 
 // setCookies('key', 'value', options);
 // getCookies(options); // => { 'name1': 'value1', name2: 'value2' }
@@ -29,46 +30,41 @@ const Cookie_banner = () => {
   function generateBanner() {
     if (areCookiesAccepted) {
       return (
-        <div className="cookie-accepted">
-          <p>This website uses cookies. You have accepted the cookies</p>
-          <div className="buttons">
-            <button
-              className="button is-danger"
-              onClick={() => {
-                removeCookiesAcception();
-              }}
-            >
-              Remove
-            </button>
-            <button className="button is-primary is-outlined">Primary</button>
+        <div className="cookie-accepted ">
+          <div class="notification is-primary is-light has-text-centered">
+            <p>
+              This website uses cookies.
+              <strong> You have accepted the cookies</strong>
+            </p>
+            <div className="buttons is-centered">
+              <button
+                className="button is-danger is-outlined"
+                onClick={() => {
+                  removeCookiesAcception();
+                }}
+              >
+                Remove
+              </button>
+            </div>
           </div>
         </div>
       );
     }
     return (
       <div className="cookie-not-yet-accepted">
-        <div id="modal-js-example" class="modal is-active">
-          <div class="modal-background"></div>
-
-          <div class="modal-content">
-            <div class="box">
-              <p>Modal JS example</p>
-              <p>This website uses cookies. No cookie set.</p>
-
-              <div className="buttons">
-                <button
-                  className="button is-success"
-                  onClick={() => {
-                    setAcceptedCookies();
-                  }}
-                >
-                  Accept
-                </button>
-                <button className="button is-primary is-outlined">
-                  Learn more
-                </button>
-              </div>
-            </div>
+        <div class="notification is-primary is-light has-text-centered">
+          <p>
+            This website uses cookies. <strong>Not Accepted yet.</strong>
+          </p>
+          <div className="buttons is-centered">
+            <button
+              className="button is-success is-outlined"
+              onClick={() => {
+                setAcceptedCookies();
+              }}
+            >
+              Accept
+            </button>
           </div>
         </div>
       </div>
@@ -76,10 +72,7 @@ const Cookie_banner = () => {
   }
 
   return (
-    <div className="cookie_banner_component">
-      <p>cookie banner</p>
-      {generateBanner()}
-    </div>
+    <div className="cookie-notification container">{generateBanner()}</div>
   );
 };
 
