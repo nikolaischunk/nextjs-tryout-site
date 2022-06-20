@@ -52,18 +52,28 @@ function Navbar() {
             <Link href="/styleguide">
               <a className="navbar-item">Style Guide</a>
             </Link>
-            <Link href="/copyright">
-              <a className="navbar-item">Copyright</a>
-            </Link>
+
+            <div className="navbar-item has-dropdown is-hoverable">
+              <Link href="/copyright">
+                <a className="navbar-link">Copyright</a>
+              </Link>
+
+              <div className="navbar-dropdown">
+                <Link href="/copyright/faq">
+                  <a className="navbar-item">FAQ</a>
+                </Link>
+                <Link href="/copyright/licenses">
+                  <a className="navbar-item">Licences</a>
+                </Link>
+              </div>
+            </div>
 
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">Tryout</a>
 
               <div className="navbar-dropdown">
                 <Link href="/tryouts">
-                  <a className="navbar-item">
-                    Tryouts
-                  </a>
+                  <a className="navbar-item">Tryouts</a>
                 </Link>
                 <a className="navbar-item">Lorem Ipsum</a>
                 <a className="navbar-item">Lorem Ipsum</a>
