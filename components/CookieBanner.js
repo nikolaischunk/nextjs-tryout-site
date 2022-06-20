@@ -31,7 +31,7 @@ const Cookie_banner = () => {
     if (areCookiesAccepted) {
       return (
         <div className="cookie-accepted ">
-          <div class="notification is-primary is-light has-text-centered">
+          <div className="notification is-danger is-light has-text-centered">
             <p>
               This website uses cookies.
               <strong> You have accepted the cookies</strong>
@@ -52,7 +52,7 @@ const Cookie_banner = () => {
     }
     return (
       <div className="cookie-not-yet-accepted">
-        <div class="notification is-primary is-light has-text-centered">
+        <div className="notification is-primary is-light has-text-centered">
           <p>
             This website uses cookies. <strong>Not Accepted yet.</strong>
           </p>
