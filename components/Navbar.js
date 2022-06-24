@@ -52,6 +52,9 @@ function Navbar() {
             <Link href="/styleguide">
               <a className="navbar-item">Style Guide</a>
             </Link>
+            <Link href="/animations">
+              <a className="navbar-item">Animations</a>
+            </Link>
 
             <div className="navbar-item has-dropdown is-hoverable">
               <Link href="/copyright">
