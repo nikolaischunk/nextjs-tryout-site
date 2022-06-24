@@ -1,0 +1,64 @@
+#ghostAnimated {
+  animation: ghostAnimation 5s ease 0s infinite normal forwards;
+}
+
+@keyframes ghostAnimation {
+  0.0% {
+    transform: scale(1) translate(-100px, 0) skew(0deg);
+  }
+  39.9% {
+    transform: scale(1) translate(100px, 0) skew(-5deg);
+  }
+  45.3% {
+    transform: scale(1) translate(100px, -6px) skew(0deg);
+  }
+  5.1% {
+    transform: scale(1) translate(-100px, 0) skew(-12deg);
+  }
+  50.3% {
+    transform: scale(1) translate(100px, 0px) skew(0deg);
+  }
+  55.3% {
+    transform: scale(1) translate(100px, -10px) skew(0deg);
+  }
+  60.3% {
+    transform: scale(1) translate(100px, 0px) skew(5deg);
+  }
+  95.1% {
+    transform: scale(1) translate(-100px, 0) skew(12deg);
+  }
+  99.6% {
+    transform: scale(1) translate(-100px, 0) skew(0deg);
+  }
+}
+//heart
+
+#heartAnimated {
+  color: red;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  font-size: 65px;
+  animation: heartAnimation 2s ease 0s infinite normal forwards;
+}
+
+@keyframes heartAnimation {
+  0.0% {
+    transform: scale(1);
+  }
+  20.1% {
+    transform: scale(1);
+  }
+  40.3% {
+    transform: scale(1.35);
+  }
+  60.1% {
+    transform: scale(1.15);
+  }
+  79.6% {
+    transform: scale(1.35);
+  }
+  99.5% {
+    transform: scale(1);
+  }
+}

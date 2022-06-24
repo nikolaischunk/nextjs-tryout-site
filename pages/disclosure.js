@@ -2,19 +2,19 @@ const disclosure = () => {
   return (
     <div className="disclosure container">
       <h1 className="is-title">Impressum</h1>
-      <p class="is-text">
+      <p className="is-text">
         Nikolai Schunk <br />
         Mainaustrasse 31 <br />
         8008 Zuerich <br />
       </p>
-      <h3 class="is-sub-header">Kontakt</h3>
+      <h3 className="is-sub-header">Kontakt</h3>
       Telefon: +41 78 672 87 29 <br />
       E-Mail: contact@chillihero.de <br />
-      <h3 class="is-sub-header" id="Liability-disclaimer">
+      <h3 className="is-sub-header" id="Liability-disclaimer">
         Haftungsausschluss
       </h3>
-      <h5 class="is-sub-title"> Haftung für Inhalte</h5>
-      <p class="is-text">
+      <h5 className="is-sub-title"> Haftung für Inhalte</h5>
+      <p className="is-text">
         Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die
         Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir
         jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7
@@ -30,8 +30,8 @@ const disclosure = () => {
         entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend
         entfernen.
       </p>
-      <h5 class="is-sub-title">Haftung für Links</h5>
-      <p class="is-text">
+      <h5 className="is-sub-title">Haftung für Links</h5>
+      <p className="is-text">
         Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
         Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden
         Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten
@@ -43,8 +43,8 @@ const disclosure = () => {
         Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden
         von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
       </p>
-      <h5 class="is-sub-title">Urheberrecht</h5>
-      <p class="is-text">
+      <h5 className="is-sub-title">Urheberrecht</h5>
+      <p className="is-text">
         Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen
         Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
         Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
@@ -58,8 +58,8 @@ const disclosure = () => {
         entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden
         wir derartige Inhalte umgehend entfernen.
       </p>
-      <h3 class="is-sub-header">Datenschutz</h3>
-      <p class="is-text">
+      <h3 className="is-sub-header">Datenschutz</h3>
+      <p className="is-text">
         Die Nutzung unserer Webseite ist in der Regel ohne Angabe
         personenbezogener Daten möglich. Soweit auf unseren Seiten
         personenbezogene Daten (beispielsweise Name, Anschrift oder
@@ -76,8 +76,8 @@ const disclosure = () => {
         Falle der unverlangten Zusendung von Werbeinformationen, etwa durch
         Spam-Mails, vor.
       </p>
-      <h3 class="is-sub-header">Google Analytics</h3>
-      <p class="is-text">
+      <h3 className="is-sub-header">Google Analytics</h3>
+      <p className="is-text">
         Diese Website benutzt Google Analytics, einen Webanalysedienst der
         Google Inc. (''Google''). Google Analytics verwendet sog. ''Cookies'',
         Textdateien, die auf Ihrem Computer gespeichert werden und die eine
