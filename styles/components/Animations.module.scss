@@ -1,5 +1,51 @@
 #ghostAnimated {
   animation: ghostAnimation 5s ease 0s infinite normal forwards;
+  width: fit-content;
+}
+
+#heartAnimated {
+  color: red;
+  width: fit-content;
+  animation: heartAnimation 2s ease 0s infinite normal forwards;
+}
+
+#bellAnimated {
+  width: fit-content;
+  &:hover {
+    animation: wobbleAnimation 2s ease 0s infinite alternate forwards;
+  }
+}
+
+@keyframes wobbleAnimation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  10% {
+    transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(-8deg);
+  }
+
+  90% {
+    transform: rotate(8deg);
+  }
 }
 
 @keyframes ghostAnimation {
@@ -31,34 +77,31 @@
     transform: scale(1) translate(-100px, 0) skew(0deg);
   }
 }
-//heart
-
-#heartAnimated {
-  color: red;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  font-size: 65px;
-  animation: heartAnimation 2s ease 0s infinite normal forwards;
-}
 
 @keyframes heartAnimation {
-  0.0% {
+  0% {
+    animation-timing-function: ease-out;
     transform: scale(1);
+    transform-origin: center center;
   }
-  20.1% {
-    transform: scale(1);
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
   }
-  40.3% {
-    transform: scale(1.35);
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
   }
-  60.1% {
-    transform: scale(1.15);
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
   }
-  79.6% {
-    transform: scale(1.35);
-  }
-  99.5% {
+
+  45% {
+    animation-timing-function: ease-out;
     transform: scale(1);
   }
 }

@@ -57,6 +57,18 @@ function Navbar() {
             </Link>
 
             <div className="navbar-item has-dropdown is-hoverable">
+              <Link href="">
+                <a className="navbar-link">Media</a>
+              </Link>
+
+              <div className="navbar-dropdown">
+                <Link href="/media/images/high_detail">
+                  <a className="navbar-item">High Detail</a>
+                </Link>
+                <hr className="navbar-divider" />
+              </div>
+            </div>
+            <div className="navbar-item has-dropdown is-hoverable">
               <Link href="/copyright">
                 <a className="navbar-link">Copyright</a>
               </Link>
