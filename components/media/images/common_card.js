@@ -1,51 +1,50 @@
-import image_low_detail from "../../../public/media/images/low-detail-2.jpeg";
-import image_high_detail from "../../../public/media/images/high-detail.jpeg";
-import Divider from "../../items/divider";
 import { SubTitle } from "../../items/typography";
-const Common_card = () => {
+const Common_card = ({
+  name,
+  description,
+  path,
+  format,
+  size,
+  pro,
+  contra,
+}) => {
   return (
-    <div className="common_card container">
-      <div className="columns mt-3">
-        <div className="column is-4">
-          <div className="card">
-            <div className="card-image">
-              <div className="image">
-                <img src="/media/images/high-detail.jpeg" alt="abc" />
-              </div>
-            </div>
-            <div className="card-content">
-              <div className="media">
-                <div className="media-content">
-                  <p className="title is-4">IMAGE FORMAT</p>
-                  <p className="subtitle is-6">@high detail</p>
-                </div>
-              </div>
-
-              <div className="content">
-                {/* SOME DESCRIPTION HERE?*/}
-                The original version of the image with high amount of detail in
-                it. The Format that most phones that the pictures with is JPEG.
-             
-                <Divider text="" />
-                {/* USAGE HERE */}
-                Whats the usage for this image format?
-                <Divider text="" />
-                {/* Pro/Contra */}
-                <SubTitle text="Pro" />
-                <p>xyz</p>
-                <SubTitle text="Contra" />
-                <p>xyz</p>
-                {/* <Divider text="" /> */}
-              </div>
-            </div>
-            <footer class="card-footer">
-              <p className="is-text card-footer-item">516kB</p>
-              {/* <p className="is-text card-footer-item">516kB</p> */}
-              <p className="is-text card-footer-item">JPEG</p>
-            </footer>
+    <div className="common_card column card">
+      <div className="card-image">
+        <figure className="image">
+          <img src={path} alt="high detailed image" />
+        </figure>
+      </div>
+      <div className="card-content">
+        <div className="media">
+          <div className="media-content">
+            <p className="is-title is-4">{name}</p>
+            <span class="tag is-primary is-light is-6">@high detail</span>
           </div>
         </div>
+
+        <div className="content pb-1">
+          {description}
+          <br />
+          <SubTitle text="Pro" />
+          {pro.map((pro) => (
+            <div>
+              <p>- {pro}</p>
+            </div>
+          ))}
+          <SubTitle text="Contra" />
+          {contra.map((contra) => (
+            <div>
+              <p>- {contra}</p>
+            </div>
+          ))}
+        </div>
       </div>
+      <footer class="card-footer">
+        <p className="is-text card-footer-item">{size}</p>
+        {/* <p className="is-text card-footer-item">516kB</p> */}
+        <p className="is-text card-footer-item">{format}</p>
+      </footer>
     </div>
   );
 };
