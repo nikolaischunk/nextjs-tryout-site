@@ -3,8 +3,8 @@ import Common_card from "./images/common_card";
 
 const Image_comparison = () => {
   return (
-    <div class="Image_comparison mt-3 container">
-      <div class="columns">
+    <div className="Image_comparison mt-3 container">
+      <div className="columns">
         {image_high_detail.map((img) => generateCard(img))}
       </div>
     </div>
@@ -14,7 +14,7 @@ const Image_comparison = () => {
 function generateCard(img) {
   console.log(img);
   return (
-    <div class="column is-4">
+    <div className="column is-4">
       <Common_card
         name={img.name}
         description={img.description}

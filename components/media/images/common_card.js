@@ -19,7 +19,7 @@ const Common_card = ({
         <div className="media">
           <div className="media-content">
             <p className="is-title is-4">{name}</p>
-            <span class="tag is-primary is-light is-6">@high detail</span>
+            <span className="tag is-primary is-light is-6">@high detail</span>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Common_card = ({
           ))}
         </div>
       </div>
-      <footer class="card-footer">
+      <footer className="card-footer">
         <p className="is-text card-footer-item">{size}</p>
         {/* <p className="is-text card-footer-item">516kB</p> */}
         <p className="is-text card-footer-item">{format}</p>
