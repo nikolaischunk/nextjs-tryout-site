@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import { SubTitle } from "../items/typography";
 const Common_card = ({
   type,
@@ -51,7 +53,6 @@ const Common_card = ({
       </div>
       <footer className="card-footer">
         <p className="is-text card-footer-item">{size}</p>
-        {/* <p className="is-text card-footer-item">516kB</p> */}
         <p className="is-text card-footer-item">{format}</p>
       </footer>
     </div>
