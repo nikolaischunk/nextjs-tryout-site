@@ -1,6 +1,9 @@
-import { SubTitle } from "../../items/typography";
+import ReactPlayer from "react-player";
+import { SubTitle } from "../items/typography";
 const Common_card = ({
+  type,
   name,
+  tag,
   description,
   path,
   format,
@@ -12,14 +15,22 @@ const Common_card = ({
     <div className="common_card column card">
       <div className="card-image">
         <figure className="image">
-          <img src={path} alt="high detailed image" />
+          {/* {type === "video" ? <ReactPlayer url={path} /> : ""} */}
+          {type === "video" ? (
+            <video width="640" height="240" autoPlay muted loop>
+              <source src={path} />
+            </video>
+          ) : (
+            ""
+          )}
+          {type === "image" ? <img src={path} alt={tag + "_" + format} /> : ""}
         </figure>
       </div>
       <div className="card-content">
         <div className="media">
           <div className="media-content">
             <p className="is-title is-4">{name}</p>
-            <span className="tag is-primary is-light is-6">@high detail</span>
+            <span className="tag is-primary is-light is-6">{tag}</span>
           </div>
         </div>
 

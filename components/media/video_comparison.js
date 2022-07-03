@@ -1,11 +1,11 @@
-import { image_formats } from "../../db/image_formats";
+import { video_formats } from "../../db/video_formats";
 import Common_card from "./common_card";
 
-const Image_comparison = () => {
+const Video_comparison = () => {
   return (
     <div className="Image_comparison mt-3">
       <div className="columns">
-        {image_formats.map((format) => generateCard(format))}
+        {video_formats.map((format) => generateCard(format))}
       </div>
     </div>
   );
@@ -15,9 +15,9 @@ function generateCard(format) {
   return (
     <div className="column is-4">
       <Common_card
-        type="image"
+        type="video"
         name={format.name}
-        tag="high detail"
+        tag="video"
         description={format.description}
         path={format.path}
         format={format.format}
@@ -29,4 +29,4 @@ function generateCard(format) {
   );
 }
 
-export default Image_comparison;
+export default Video_comparison;
