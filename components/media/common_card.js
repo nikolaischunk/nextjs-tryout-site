@@ -1,4 +1,3 @@
-import ReactPlayer from "react-player";
 import { SubTitle } from "../items/typography";
 const Common_card = ({
   type,
@@ -15,7 +14,6 @@ const Common_card = ({
     <div className="common_card column card">
       <div className="card-image">
         <figure className="image">
-          {/* {type === "video" ? <ReactPlayer url={path} /> : ""} */}
           {type === "video" ? (
             <video width="640" height="240" autoPlay muted loop>
               <source src={path} />
