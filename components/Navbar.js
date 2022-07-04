@@ -52,9 +52,23 @@ function Navbar() {
             <Link href="/styleguide">
               <a className="navbar-item">Style Guide</a>
             </Link>
-            <Link href="/animations">
-              <a className="navbar-item">Animations</a>
-            </Link>
+
+            <div className="navbar-item has-dropdown is-hoverable">
+              <Link href="/animations">
+                <a className="navbar-link">Animations</a>
+              </Link>
+              <div className="navbar-dropdown">
+                <Link href="/media/image">
+                  <a className="navbar-item">CSS</a>
+                </Link>
+                <Link href="/media/video">
+                  <a className="navbar-item">GIF</a>
+                </Link>
+                <Link href="/media/sound">
+                  <a className="navbar-item">SVG</a>
+                </Link>
+              </div>
+            </div>
 
             <div className="navbar-item has-dropdown is-hoverable">
               <Link href="">
