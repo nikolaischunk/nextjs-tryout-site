@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-key */
 import { SubTitle } from "../items/typography";
+import Image from "next/image";
 const Common_card = ({
   type,
   name,
@@ -23,7 +24,16 @@ const Common_card = ({
           ) : (
             ""
           )}
-          {type === "image" ? <img src={path} alt={tag + "_" + format} /> : ""}
+          {type === "image" ? (
+            <Image
+              src={path}
+              alt={tag + "_" + format}
+              width={400 + "px"}
+              height={500 + "px"}
+            />
+          ) : (
+            ""
+          )}
         </figure>
       </div>
       <div className="card-content">
