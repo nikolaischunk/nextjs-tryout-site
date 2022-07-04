@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Tryout = () => {
   return (
     <div>
@@ -37,9 +39,11 @@ const Tryout = () => {
               <article className="media">
                 <div className="media-left">
                   <figure className="image is-64x64">
-                    <img
+                    <Image
                       src="https://bulma.io/images/placeholders/128x128.png"
                       alt="Image"
+                      width="128px"
+                      height="128px"
                     />
                   </figure>
                 </div>
