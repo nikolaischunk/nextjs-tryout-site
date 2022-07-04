@@ -8,7 +8,7 @@ const Button = ({ type, isOutlined, label, link }) => {
   console.log(link);
   console.log(button_class);
   return (
-    <div class="custom_button column">
+    <div className="custom_button column">
       <Link href={link}>
         <button className={button_class}>{label}</button>
       </Link>
