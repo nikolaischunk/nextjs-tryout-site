@@ -50,7 +50,7 @@ const Common_card = ({
         </div>
 
         <div className="content pb-1">
-          <div class="description" style={{ height: 130 + "px" }}>
+          <div className="description" style={{ height: 130 + "px" }}>
             {description}
           </div>
           <SubTitle text="Pro" />
