@@ -29,8 +29,8 @@ const Common_card = ({
       <div className="card-content">
         <div className="media">
           <div className="media-content">
-            <p className="is-title is-4">{name}</p>
-            <span className="tag is-primary is-light is-6">{tag}</span>
+            <p className="is-title is-5">{name}</p>
+            {/* <span className="tag is-primary is-light is-6">{tag}</span> */}
           </div>
         </div>
 
@@ -38,15 +38,15 @@ const Common_card = ({
           {description}
           <br />
           <SubTitle text="Pro" />
-          {pro.map((pro) => (
+          {pro.map((p) => (
             <div>
-              <p>- {pro}</p>
+              <p key={p}>- {p}</p>
             </div>
           ))}
           <SubTitle text="Contra" />
-          {contra.map((contra) => (
+          {contra.map((c) => (
             <div>
-              <p>- {contra}</p>
+              <p>- {c}</p>
             </div>
           ))}
         </div>

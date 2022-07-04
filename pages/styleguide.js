@@ -7,7 +7,7 @@ const styleguide = () => {
     return (
         <div className="styleguide">
             <div className="container">
-                <Heading heading="Styleguide" subheading="This is an Overview over different Style aspects that get implemented on this Website." divider=" " />
+                <Heading header="Styleguide" subheader="This is an Overview over different Style aspects that get implemented on this Website." divider=" " />
                 <Fonts />
                 <Colors />
                 <Buttons />

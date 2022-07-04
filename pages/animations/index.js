@@ -1,14 +1,14 @@
 import CSSAnimations from "../../components/animations/CSSAnimations";
 import Link from "next/link";
-
 import Heading from "../../components/items/heading";
+
 const animations = () => {
   return (
     <div className="animations">
       <div className="container">
         <Heading
-          heading="Animations"
-          subheading="This is an Collection of Animations Styles"
+          header="Animations"
+          subheader="This is an Collection of Animations Styles"
           divider=" "
         />
         <div className="columns">

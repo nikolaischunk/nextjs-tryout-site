@@ -8,7 +8,7 @@ import styles from "../../styles/components/Animations.module.scss";
 const CSSAnimations = () => {
   return (
     <div className="css_animations">
-      <Heading heading="CSS Animations" subheading="Some CSS Animation tryouts I made" />
+      <Heading header="CSS Animations" subheader="Some CSS Animation tryouts I made" />
       <div id={styles.ghostAnimated}>
         <RiGhostLine size="5rem" />
       </div>

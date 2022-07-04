@@ -3,7 +3,7 @@ import Heading from "../../components/items/Heading";
 const video = () => {
   return (
     <div className="videos container mt-5">
-      <Heading heading="Video" />
+      <Heading header="Video" />
       <Video_comparison />
     </div>
   );
