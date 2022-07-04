@@ -37,16 +37,22 @@ const Common_card = ({
         </figure>
       </div>
       <div className="card-content">
-        <div className="media">
-          <div className="media-content">
-            <p className="is-title is-5">{name}</p>
-            {/* <span className="tag is-primary is-light is-6">{tag}</span> */}
-          </div>
+        <div className="media-content">
+          <p className="is-title is-5">{name}</p>
+          {type === "audio" ? (
+            <audio src={path} controls>
+              Error: your web browser does not support this audio player.
+            </audio>
+          ) : (
+            ""
+          )}
+          {/* <span className="tag is-primary is-light is-6">{tag}</span> */}
         </div>
 
         <div className="content pb-1">
-          {description}
-          <br />
+          <div class="description" style={{ height: 130 + "px" }}>
+            {description}
+          </div>
           <SubTitle text="Pro" />
           {pro.map((p) => (
             <div>

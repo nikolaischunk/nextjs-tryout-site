@@ -1,12 +1,13 @@
 import Heading from "../../components/items/heading";
-import Image_comparison from "../../components/media/image_comparison";
-const high_detail = () => {
+import { image_formats } from "../../db/image_formats";
+import Media_comparison from "../../components/media/comparison";
+const image_comparison = () => {
   return (
     <div className="image_comparison container mt-5">
       <Heading header="Image" />
-      <Image_comparison />
+      <Media_comparison content={image_formats} type="image" />
     </div>
   );
 };
 
-export default high_detail;
+export default image_comparison;

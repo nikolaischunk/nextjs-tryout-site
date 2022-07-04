@@ -1,23 +1,20 @@
-import { video_formats } from "../../db/video_formats";
 import Common_card from "./common_card";
 
-const Video_comparison = () => {
+const Media_comparison = ({ content, type }) => {
   return (
-    <div className="Image_comparison mt-3">
+    <div className="comparison  mt-3">
       <div className="columns">
-        {video_formats.map((format) => generateCard(format))}
+        {content.map((format) => generateCard(format, type))}
       </div>
     </div>
   );
 };
-
-function generateCard(format) {
+function generateCard(format, type) {
   return (
     <div className="column is-4">
       <Common_card
-        type="video"
+        type={type}
         name={format.name}
-        tag="video"
         description={format.description}
         path={format.path}
         format={format.format}
@@ -28,5 +25,4 @@ function generateCard(format) {
     </div>
   );
 }
-
-export default Video_comparison;
+export default Media_comparison;

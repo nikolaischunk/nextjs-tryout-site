@@ -67,6 +67,9 @@ function Navbar() {
                 <Link href="/media/video">
                   <a className="navbar-item">Video</a>
                 </Link>
+                <Link href="/media/sound">
+                  <a className="navbar-item">Audio</a>
+                </Link>
               </div>
             </div>
 
