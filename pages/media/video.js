@@ -1,5 +1,5 @@
 import Video_comparison from "../../components/media/video_comparison";
-import Heading from "../../components/items/Heading";
+import Heading from "../../components/items/heading";
 const video = () => {
   return (
     <div className="videos container mt-5">
