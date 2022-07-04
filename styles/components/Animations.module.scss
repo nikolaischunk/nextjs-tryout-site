@@ -20,10 +20,6 @@
   //dark #635bff
   //light #80e9ff
 
-  svg {
-    cursor: pointer;
-  }
-
   #darkGroup {
     fill: #635bff;
   }
@@ -31,28 +27,8 @@
   #lightGroup {
     fill: #80e9ff;
   }
-
-  #dark1,
-  #light1,
-  #dark2 {
-    transition: all 1s ease;
-  }
-
-  #dark2 {
-    transform: translateX(-100%);
-  }
-
-  svg:hover #light1 {
-    transform: translateX(20%);
-  }
-  svg:hover #dark1 {
-    transform: translateX(40%);
-    opacity: 0;
-  }
-  svg:hover #dark2 {
-    transform: translateX(0%);
-  }
 }
+
 @keyframes wobbleAnimation {
   0%,
   100% {
@@ -142,3 +118,6 @@
     transform: scale(1);
   }
 }
+
+// SCROLL HERE
+

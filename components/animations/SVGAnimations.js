@@ -1,9 +1,8 @@
-import { RiGhostLine } from "react-icons/ri";
-import { FaHeart } from "react-icons/fa";
-import { MdNotificationsActive } from "react-icons/md";
 import Divider from "../items/divider";
 import Heading from "../items/heading";
+import SVG_Clock from "./svg/clock";
 import styles from "../../styles/components/Animations.module.scss";
+import Image from "next/image";
 
 const SVGAnimations = () => {
   return (
@@ -40,6 +39,13 @@ const SVGAnimations = () => {
         </g>
       </svg>
 
+      <SVG_Clock />
+      <Image
+        src="/animations/clock.svg"
+        alt="next"
+        width={200 + "px"}
+        height={200 + "px"}
+      />
       <Divider />
     </div>
   );
