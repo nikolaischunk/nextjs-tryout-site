@@ -12,4 +12,3 @@ export default function Home() {
 
   );
 }
-//write sfc for template export
