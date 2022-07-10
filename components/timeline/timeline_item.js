@@ -18,7 +18,7 @@ const Timeline_item = ({ heading, content, circle_color, circle_icon }) => {
       break;
   }
 
-  let circle_icon_class = circle_icon ? " is-icon" : " ";
+  let circle_icon_class = circle_icon ? " is-icon" : "";
   let circle_class = color + " timeline-marker" + circle_icon_class;
 
   return (
