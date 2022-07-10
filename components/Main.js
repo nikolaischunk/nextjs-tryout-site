@@ -14,7 +14,6 @@ const Main = () => {
       <Text text="When starting this Project I had no prior experience neither with working with NextJS nor with the CSS Framework BulmaCSS.  During this Module I learned, how to set up a new Project with NextJS, Implement a Site Theming and working with cookies. I also got to know NextJS better, added Style Components and  CSS Animations. Comparing the different File formats helped me getting a better understanding of what to use and what to not use for a website." />
       <Divider />
       <Heading subheader="Timeline" />
-      {/* <BlockQuote text="This is a blockquote" /> */}
       <Timeline />
     </div>
   );

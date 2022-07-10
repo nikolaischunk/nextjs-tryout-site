@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-key */
 import { SubTitle } from "../items/typography";
 import Image from "next/image";
