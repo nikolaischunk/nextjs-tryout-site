@@ -6,10 +6,8 @@ export default function Home() {
     <div className="main-content">
       <div className="container">
         <Main />
-        <Buttons />
       </div>
     </div>
 
   );
 }
-//write sfc for template export

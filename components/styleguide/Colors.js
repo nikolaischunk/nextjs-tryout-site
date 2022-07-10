@@ -5,7 +5,7 @@ const Colors = () => {
     return (
         <div className="colors" id="colors">
             <div className="">
-                <Heading heading="Colors" subheading="An overview over the Colors used in this Project" />
+                <Heading header="Colors" subheader="An overview over the Colors used in this Project" />
                 <button className="button is-fullwidth is-primary block">Normal</button>
                 <button className="button is-fullwidth is-link block">Link</button>
                 <button className="button is-fullwidth is-info block">Info</button>

@@ -7,8 +7,8 @@ const GIFAnimation = () => {
   return (
     <div className="GIFAnimation">
       <Heading
-        heading="GIF Animations"
-        subheading="An example of an animated GIF"
+        header="GIF Animations"
+        subheader="An example of an animated GIF"
       />
       <Image src={gifPicture} alt="GIF Animation" />
     </div>

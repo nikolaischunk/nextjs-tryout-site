@@ -4,7 +4,7 @@ import Heading from "../items/heading";
 const Main = () => {
   return (
     <div className="buttons-tryout">
-      <Heading heading="Buttons" subheading="An overview over the Button Combinations used in this Project" />
+      <Heading header="Buttons" subheader="An overview over the Button Combinations used in this Project" />
 
       <div className="block buttons">
         <button className="button">Normal</button>

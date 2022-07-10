@@ -1,4 +1,4 @@
-export const image_high_detail = [
+export const image_formats = [
   {
     name: "JPEG",
     description:
@@ -6,11 +6,7 @@ export const image_high_detail = [
     path: "/media/images/high-detail/high-detail.jpeg",
     format: "jpeg / jpg",
     size: "654 KB",
-    pro: [
-      "Small file size",
-      "Widely supported format",
-      "Good color range",
-    ],
+    pro: ["Small file size", "Widely supported format", "Good color range"],
     contra: [
       "Lossy compression",
       "Not great for text, simple graphics, or illustrations",
@@ -35,20 +31,5 @@ export const image_high_detail = [
     size: "537 KB",
     pro: ["Small file size", "Still great image quality"],
     contra: ["Limited to 8-bit"],
-  },
-];
-
-export const image_low_detail = [
-  {
-    slug: "",
-    path: "",
-    name: "",
-    format: "",
-    size: "",
-    size_reason: "",
-    pro: "",
-    contra: "",
-    usage: "",
-    description: "",
   },
 ];

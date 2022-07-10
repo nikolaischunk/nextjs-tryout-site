@@ -1,31 +1,44 @@
 import CSSAnimations from "../../components/animations/CSSAnimations";
 import Link from "next/link";
-
 import Heading from "../../components/items/heading";
+import Button from "../../components/items/button";
+
 const animations = () => {
   return (
     <div className="animations">
       <div className="container">
         <Heading
-          heading="Animations"
-          subheading="This is an Collection of Animations Styles"
+          header="Animations"
+          subheader="This is an Collection of Animations Styles"
           divider=" "
         />
         <div className="columns">
-          <div className="column">
-            <Link href="/animations/css">
-              <button className="button is-large is-fullwidth is-link is-outlined is-family-title">
-                CSS
-              </button>
-            </Link>
-          </div>
-          <div className="column">
-            <Link href="/animations/gif">
-              <button className="button is-large is-fullwidth is-link is-outlined is-family-title">
-                GIF
-              </button>
-            </Link>
-          </div>
+          <Button
+            type="link"
+            label="CSS"
+            link="/animations/css"
+            isOutlined={true}
+          />
+          <Button
+            type="link"
+            label="GIF"
+            link="/animations/gif"
+            isOutlined={true}
+          />
+        </div>
+        <div className="columns">
+          <Button
+            type="link"
+            label="SVG"
+            link="/animations/svg"
+            isOutlined={true}
+          />
+          <Button
+            type="link"
+            label="SCROLL"
+            link="/animations/scroll  "
+            isOutlined={true}
+          />
         </div>
       </div>
     </div>

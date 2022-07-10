@@ -4,7 +4,7 @@ import Heading from "../items/heading";
 const Header = () => {
   return (
     <div className="header">
-      <Heading heading="Heading" subheading="An overview over the Headings used in this Project" />
+      <Heading header="Heading" subheader="An overview over the Headings used in this Project" />
       <h1 className="title is-1 is-family-title">Title 1</h1>
       <h2 className="title is-2 is-family-title">Title 2</h2>
       <h3 className="title is-3 is-family-title">Title 3</h3>

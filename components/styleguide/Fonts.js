@@ -5,7 +5,7 @@ const Fonts = () => {
     return (
         <div className="fonts" id="fonts">
             <div className="">
-                <Heading heading="Fonts" subheading="An overview over the Fonts used in this Project" />
+                <Heading header="Fonts" subheader="An overview over the Fonts used in this Project" />
 
                 <h3 className="has-text-weight-semibold is-size-3">Rubik</h3>
                 <h4 className="=is-size-4 is-family-sub-title">Title Font</h4>

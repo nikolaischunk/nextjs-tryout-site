@@ -52,22 +52,41 @@ function Navbar() {
             <Link href="/styleguide">
               <a className="navbar-item">Style Guide</a>
             </Link>
-            <Link href="/animations">
-              <a className="navbar-item">Animations</a>
-            </Link>
+
+            <div className="navbar-item has-dropdown is-hoverable">
+              <Link href="/animations">
+                <a className="navbar-link">Animations</a>
+              </Link>
+              <div className="navbar-dropdown">
+                <Link href="/media/image">
+                  <a className="navbar-item">CSS</a>
+                </Link>
+                <Link href="/media/video">
+                  <a className="navbar-item">GIF</a>
+                </Link>
+                <Link href="/media/sound">
+                  <a className="navbar-item">SVG</a>
+                </Link>
+              </div>
+            </div>
 
             <div className="navbar-item has-dropdown is-hoverable">
               <Link href="">
                 <a className="navbar-link">Media</a>
               </Link>
-
               <div className="navbar-dropdown">
-                <Link href="/media/images/high_detail">
-                  <a className="navbar-item">High Detail</a>
+                <Link href="/media/image">
+                  <a className="navbar-item">Image</a>
                 </Link>
-                <hr className="navbar-divider" />
+                <Link href="/media/video">
+                  <a className="navbar-item">Video</a>
+                </Link>
+                <Link href="/media/sound">
+                  <a className="navbar-item">Audio</a>
+                </Link>
               </div>
             </div>
+
             <div className="navbar-item has-dropdown is-hoverable">
               <Link href="/copyright">
                 <a className="navbar-link">Copyright</a>
@@ -82,20 +101,9 @@ function Navbar() {
                 </Link>
               </div>
             </div>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">Tryout</a>
-
-              <div className="navbar-dropdown">
-                <Link href="/tryouts">
-                  <a className="navbar-item">Tryouts</a>
-                </Link>
-                <a className="navbar-item">Lorem Ipsum</a>
-                <a className="navbar-item">Lorem Ipsum</a>
-                <hr className="navbar-divider" />
-                <a className="navbar-item">Lorem Ipsum</a>
-              </div>
-            </div>
+            <Link href="/tryouts">
+              <a className="navbar-item">Tryouts</a>
+            </Link>
           </div>
 
           {/* <div className="navbar-end">

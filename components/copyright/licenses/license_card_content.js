@@ -9,7 +9,7 @@ const Content = ({ title, url, content }) => {
                     <div className="content">
                         <p className="title is-family-title">{t}</p>
                         {url ?
-                            <a href={url} target="_blank" className="icon-text subtitle is-family-sub-title">
+                            <a href={url} rel="noreferrer" target="_blank" className="icon-text subtitle is-family-sub-title">
                                 <span>More Information</span>
                                 <span className="icon">
                                     <GoLinkExternal />

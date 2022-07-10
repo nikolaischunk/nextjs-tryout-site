@@ -16,6 +16,19 @@
   }
 }
 
+.svg_animations {
+  //dark #635bff
+  //light #80e9ff
+
+  #darkGroup {
+    fill: #635bff;
+  }
+
+  #lightGroup {
+    fill: #80e9ff;
+  }
+}
+
 @keyframes wobbleAnimation {
   0%,
   100% {
@@ -105,3 +118,6 @@
     transform: scale(1);
   }
 }
+
+// SCROLL HERE
+
