@@ -1,4 +1,3 @@
-import "../styles/components/Navbar.module.scss";
 import { useState } from "react";
 import Link from "next/link";
 
