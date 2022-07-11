@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Heading from "../../components/items/heading";
-import "../../styles/pages/Copyright.module.scss";
 
 const copyright = () => {
   return (
