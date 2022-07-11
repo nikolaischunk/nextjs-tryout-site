@@ -1,4 +1,3 @@
-import "../styles/components/Navbar.module.scss";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -19,11 +18,6 @@ function Navbar() {
       >
         <div className="navbar-brand">
           <a className="navbar-item" href="#">
-            {/* <img
-              src="https://bulma.io/images/bulma-logo.png"
-              width="112"
-              height="28"
-            /> */}
             <h1 className="navbar-logo is-size-4 is-logo">Nikolai</h1>
           </a>
 
@@ -49,8 +43,17 @@ function Navbar() {
             <Link href="/">
               <a className="navbar-item">Home</a>
             </Link>
+
             <Link href="/styleguide">
               <a className="navbar-item">Style Guide</a>
+            </Link>
+
+            <Link href="/tests">
+              <a className="navbar-item">UI Tests</a>
+            </Link>
+
+            <Link href="/form">
+              <a className="navbar-item">Form Automation</a>
             </Link>
 
             <div className="navbar-item has-dropdown is-hoverable">
@@ -58,14 +61,17 @@ function Navbar() {
                 <a className="navbar-link">Animations</a>
               </Link>
               <div className="navbar-dropdown">
-                <Link href="/media/image">
+                <Link href="/animations/css">
                   <a className="navbar-item">CSS</a>
                 </Link>
-                <Link href="/media/video">
+                <Link href="/animations/gif">
                   <a className="navbar-item">GIF</a>
                 </Link>
-                <Link href="/media/sound">
+                <Link href="/animations/svg">
                   <a className="navbar-item">SVG</a>
+                </Link>
+                <Link href="/animations/scroll">
+                  <a className="navbar-item">Scroll</a>
                 </Link>
               </div>
             </div>
