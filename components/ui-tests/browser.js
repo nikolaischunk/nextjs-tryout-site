@@ -4,8 +4,8 @@ import Text from "../items/text";
 
 const BrowserUITest = () => {
   return (
-    <div className="browser_ui_test">
-      <Heading subheader={"Browser UI Tests"} />
+    <div className="browser_ui_test mt-3">
+      <Heading header={"Browser UI Tests"} />
       <Text text="Firefox" />
       <Image
         src="/media/images/showcase/browser/firefox.png"
